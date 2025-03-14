@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Zani's Plant Based Cakes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="about.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#F8B4C7',
+secondary: '#A7D7C5'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+</style>
+</head>
+<body class="font-poppins">
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-content">
+        <a href="#" class="logo"><img src="../images/Logo2.png" alt="Zani's Plant Based Cakes Logo" class="h-12"></a>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="mailto:jaizaniwilson@gmail.com?subject=Cake%20Order%20Inquiry" class="order-button">Order Now</a>
+      </div>
+      <button class="mobile-menu-button">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+<section class="pt-20 relative">
+<div class="absolute inset-0 bg-[url('/images/zani.JPG')] bg-cover bg-center opacity-20"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<h1 class="text-5xl font-playfair text-center mb-6">About</h1>
+<p class="text-xl text-center text-gray-600 max-w-3xl mx-auto">
+Zani's Plant Based Cakes was born from a passion for creating beautiful, delicious desserts that are accessible and kind to animals and the earth.
+</p>
+</div>
+</section>
+<section class="py-20 bg-[#fef1f5]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-playfair mb-6">A Sweet Journey</h2>
+<p class="text-gray-600 mb-6">
+    My journey into vegan baking started with family. My sister has severe allergies to milk and eggs, and I wanted to create sweet treats she could enjoy without worry. As I experimented with plant-based ingredients, I discovered that delicious desserts didn't need animal products at all.
+
+    Over time, I learned more about the ethical concerns and environmental impact of animal agriculture. That knowledge led me to embrace veganism—not just in my baking, but in my life. I continued to refine my recipes, proving that plant-based cakes can be just as rich, moist, and flavorful as their traditional counterparts, all while reducing harm to animals and the planet.
+</p>
+<p class="text-gray-600">
+    Today, my goal is simple: to share these delicious, thoughtfully made cakes with everyone. Whether you're vegan, have dietary restrictions, or just love a good dessert, I'm here to make sure you never have to compromise on taste.
+</p>
+</div>
+<div>
+<img src="/images/cupcakes.png" alt="Our Founder" class="rounded-lg shadow-xl w-full h-[600px] object-cover">
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-playfair text-center mb-16">Values</h2>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="text-center p-8 bg-white rounded-lg shadow-sm">
+<div class="w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10 rounded-full">
+<i class="ri-plant-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-medium mb-4">100% Plant-Based</h3>
+<p class="text-gray-600">We use only the finest plant-based ingredients, ensuring every creation is completely vegan and delicious.</p>
+</div>
+<div class="text-center p-8 bg-white rounded-lg shadow-sm">
+<div class="w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10 rounded-full">
+<i class="ri-heart-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-medium mb-4">Made with Love</h3>
+<p class="text-gray-600">Each cake is handcrafted with attention to detail and passion for perfection.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-[#fef1f5]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl font-playfair mb-6">Ready to Order?</h2>
+<p class="text-xl text-gray-600 mb-8">Let us create something special for your next celebration.</p>
+<a href="mailto:jaizaniwilson@gmail.com?subject=Cake%20Order%20Inquiry" class="inline-block bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-primary/90 transition-colors cursor-pointer">Order Now</a>
+</div>
+</section>
+<footer class="bg-pink-900 text-white py-16">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-12">
+<div>
+    <a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 block"><img src="../images/Logo2.png" alt="Zani's Plant Based Cakes Logo" class="h-22"></a>
+<p class="text-gray-400">Crafting delicious vegan cakes with love since 2023.</p>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact</h3>
+<div class="space-y-2 text-gray-400">
+<p>New York, NY 10003</p>
+<p>+1 (443) 694-1684</p>
+<p>jaizaniwilson@gmail.com</p>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<div class="space-y-2">
+<a href="../index.html" class="block text-gray-400 hover:text-primary transition-colors">Home</a>
+<a href="about.html" class="block text-gray-400 hover:text-primary transition-colors">About</a>
+<a href="gallery.html" class="block text-gray-400 hover:text-primary transition-colors">Gallery</a>
+</div>
+</div>
+</div>
+<div class="border-t border-pink-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400">&copy; 2025 Zani's Vegan Cakes. All rights reserved.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<div class="w-10 h-10 flex items-center justify-center bg-pink-800 rounded-full cursor-pointer hover:bg-pink-700">
+<i class="ri-instagram-line"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-pink-800 rounded-full cursor-pointer hover:bg-pink-700">
+<i class="ri-facebook-line"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-pink-800 rounded-full cursor-pointer hover:bg-pink-700">
+<i class="ri-twitter-x-line"></i>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

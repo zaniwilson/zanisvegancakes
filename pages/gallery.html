@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Zani's Vegan Cakes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="../styles.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.masonry-grid {
+column-count: 3;
+column-gap: 1.5rem;
+}
+.masonry-item {
+break-inside: avoid;
+margin-bottom: 1.5rem;
+}
+.modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+z-index: 50;
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#FFB5A7',
+secondary: '#FCD5CE'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-white min-h-screen">
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-content">
+        <a href="#" class="logo"><img src="../images/Logo2.png" alt="Zani's Plant Based Cakes Logo" class="h-12"></a>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <button class="order-button">Order Now</button>
+      </div>
+      <button class="mobile-menu-button">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+<main class="container mx-auto px-6 pt-24 pb-12">
+<div class="flex items-center justify-between mb-8">
+<h1 class="text-4xl font-['Playfair_Display'] font-semibold text-gray-800">Cakes</h1>
+<div class="flex items-center space-x-2">
+</button>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 mb-8">
+<button class="px-4 py-2 text-sm bg-gray-50 text-gray-600 rounded-full !rounded-button whitespace-nowrap cursor-pointer">Birthday</button>
+<button class="px-4 py-2 text-sm bg-gray-50 text-gray-600 rounded-full !rounded-button whitespace-nowrap cursor-pointer">Wedding</button>
+<button class="px-4 py-2 text-sm bg-gray-50 text-gray-600 rounded-full !rounded-button whitespace-nowrap cursor-pointer">Holiday</button>
+<button class="px-4 py-2 text-sm bg-gray-50 text-gray-600 rounded-full !rounded-button whitespace-nowrap cursor-pointer">Seasonal</button>
+</div>
+<div class="masonry-grid">
+  <div class="masonry-item">
+    <img src="../images/valentines.png" alt="Chocolate Berry Bliss" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/grad.png" alt="Elegant Wedding Cake" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/baby_shower.png" alt="Rainbow Birthday Cake" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/five.jpg" alt="Rustic Carrot Cake" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/berry.png" alt="Matcha Elegance" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/rainbow.png" alt="Red Velvet Dream" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/oreo.png" alt="Autumn Spice Cake" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/cupcakes.png" alt="Summer Citrus Delight" class="w-full rounded shadow-sm">
+  </div>
+  <div class="masonry-item">
+    <img src="../images/peach.png" alt="Winter Wonderland Cake" class="w-full rounded shadow-sm">
+  </div>
+</div>
+<div class="text-center mt-12">
+</div>
+</main>
+<div class="modal" id="cakeModal">
+<div class="fixed inset-0 flex items-center justify-center p-4">
+<div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+<div class="relative">
+<button class="absolute right-4 top-4 text-gray-500 hover:text-gray-700 z-10">
+<i class="ri-close-line text-2xl"></i>
+</button>
+<div class="p-6">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2">
+<img src="" alt="" id="modalImage" class="w-full h-auto rounded">
+</div>
+<div class="md:w-1/2">
+<h2 class="text-2xl font-['Playfair_Display'] font-semibold mb-4" id="modalTitle"></h2>
+<p class="text-gray-600 mb-6" id="modalDescription"></p>
+<div class="space-y-4">
+<div class="flex items-center justify-between py-2 border-b">
+<span class="text-gray-600">Size</span>
+<span class="text-gray-900">6", 8", 10"</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b">
+<span class="text-gray-600">Serves</span>
+<span class="text-gray-900">8-10 people</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b">
+<span class="text-gray-600">Notice Required</span>
+<span class="text-gray-900">48 hours</span>
+</div>
+</div>
+<button class="w-full mt-8 px-6 py-3 bg-primary text-white rounded-button hover:bg-primary/90">Inquire Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-pink-900 text-white py-16">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-12">
+      <div>
+        <a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 block"><img src="../images/Logo2.png" alt="Zani's Plant Based Cakes Logo" class="h-22"></a>
+        <p class="text-gray-400">Crafting delicious vegan cakes with love since 2023.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contact</h3>
+        <div class="space-y-2 text-gray-400">
+          <p>New York, NY 10003</p>
+          <p>+1 (443) 694-1684</p>
+          <p>jaizaniwilson@gmail.com</p>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <div class="space-y-2">
+          <a href="../index.html" class="block text-gray-400 hover:text-primary transition-colors">Home</a>
+          <a href="about.html" class="block text-gray-400 hover:text-primary transition-colors">About</a>
+          <a href="#" class="block text-gray-400 hover:text-primary transition-colors">Gallery</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-pink-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400">&copy; 2025 Zani's Vegan Cakes. All rights reserved.</p>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <div class="w-10 h-10 flex items-center justify-center bg-pink-800 rounded-full cursor-pointer hover:bg-pink-700">
+          <i class="ri-instagram-line"></i>
+        </div>
+        <div class="w-10 h-10 flex items-center justify-center bg-pink-800 rounded-full cursor-pointer hover:bg-pink-700">
+          <i class="ri-facebook-line"></i>
+        </div>
+        <div class="w-10 h-10 flex items-center justify-center bg-pink-800 rounded-full cursor-pointer hover:bg-pink-700">
+          <i class="ri-twitter-x-line"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
